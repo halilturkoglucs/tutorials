@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-5-mvc</artifactId>
     <name>spring-5-mvc</name>
-    <description>spring 5 MVC sample project about new features</description>
     <packaging>jar</packaging>
+    <description>spring 5 MVC sample project about new features</description>
 
     <parent>
         <groupId>com.baeldung</groupId>
@@ -87,7 +87,7 @@
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
-            <version>0.18</version>
+            <version>${javafaker.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -175,7 +175,9 @@
         <jayway-rest-assured.version>2.9.0</jayway-rest-assured.version>
         <jackson.version>2.9.9</jackson.version> <!-- Same as spring-boot-dependencies:2.1.7.RELEASE -->
         <kotlin.version>1.2.71</kotlin.version> <!-- Same as spring-boot-dependencies:2.1.7.RELEASE -->
-        <start-class>com.baeldung.Spring5Application</start-class>
         <httpclient.version>4.5.8</httpclient.version>
+        <start-class>com.baeldung.Spring5Application</start-class>
+        <javafaker.version>0.18</javafaker.version>
     </properties>
+
 </project>
